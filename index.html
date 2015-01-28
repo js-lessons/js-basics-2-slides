@@ -47,6 +47,10 @@
 				<section>
 					<h3>Определение функции</h3>
 					<pre><code data-trim>
+(function() {});                              // [Function]
+(function() {}) === (function() {});          // false
+(function() {})();                            // undefined
+
 var nope = function() {}
 
 var showThis = function() {
